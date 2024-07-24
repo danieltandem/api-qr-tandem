@@ -1,0 +1,27 @@
+PUT http://localhost/api-qr-tandem/v1/change-role.php
+Content-Type: "application/json"
+
+{
+    "email": "gerente@gmail.com",
+    "role":"admin"
+}
+
+###
+PUT  http://localhost/api-qr-tandem/v1/change-role.php
+Content-Type: "application/json"
+
+{
+   
+    "email": "empleado@gmail.com",
+    "role":"employee"
+}
+
+###
+PUT  http://localhost/api-qr-tandem/v1/change-role.php
+Content-Type: "application/json"
+
+{
+   
+    "email": "invitado@gmail.com",
+    "role":"guest"
+}

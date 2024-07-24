@@ -1,0 +1,28 @@
+### borrar con email valido
+DELETE  http://localhost/api-qr-tandem/v1/delete-user.php
+Content-Type: application/json
+
+{
+    "email": "robertob@gmail.com"
+}
+### borrar con email no existente
+DELETE  http://localhost/api-qr-tandem/v1/delete-user.php
+Content-Type: application/json
+
+{
+    "email": "rosa694@gmail.com"
+}
+### borrar con datos erroneos
+DELETE  http://localhost/api-qr-tandem/v1/delete-user.php
+Content-Type: application/json
+
+{
+    "id": "1"
+}
+### borrar con el email vacío
+DELETE  http://localhost/api-qr-tandem/v1/delete-user.php
+Content-Type: application/json
+
+{
+    "email": ""
+}

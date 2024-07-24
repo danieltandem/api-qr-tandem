@@ -1,0 +1,13 @@
+POST http://localhost/api-qr-tandem/v1/upload-image-user.php
+Content-Type: multipart/form-data; boundary=myboundary
+
+--myboundary
+Content-Disposition: form-data; name="image"; filename="gerente.jpg"
+Content-Type: image/jpeg
+
+<contenido del archivo de imagen>
+--myboundary
+Content-Disposition: form-data; name="id"
+
+1
+--myboundary--

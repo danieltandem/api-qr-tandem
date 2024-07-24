@@ -1,0 +1,22 @@
+GET  http://localhost/api-qr-tandem/v1/get-user.php
+Content-Type: "application/json"
+
+{
+    "id": 1
+}
+
+###
+GET  http://localhost/api-qr-tandem/v1/get-user.php
+Content-Type: "application/json"
+
+{
+    "id": 2
+}
+
+###
+GET  http://localhost/api-qr-tandem/v1/get-user.php
+Content-Type: "application/json"
+
+{
+    "id": 3
+}

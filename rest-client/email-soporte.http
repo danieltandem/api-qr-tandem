@@ -1,0 +1,9 @@
+POST  http://localhost/api-qr-tandem/v1/email-soporte.php
+Content-Type: "application/json"
+
+{
+    "nombre": "Elena Fiscer",
+    "email": "elena@gmail.com",
+    "asunto": "alberto es guay",
+    "mensaje": "Alberto se toma las cosas con humor" 
+}

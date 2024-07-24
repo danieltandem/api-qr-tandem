@@ -1,0 +1,6 @@
+DELETE http://localhost/api-qr-tandem/v1/delete-qr.php
+Content-Type: "application/json"
+
+{
+   "id":1
+}

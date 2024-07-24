@@ -1,0 +1,9 @@
+PUT http://localhost/api-qr-tandem/v1/update-qr.php
+Content-Type: "application/json"
+
+{
+   "id":1,
+    "data": "no me gusta trabajar",
+    "nombre_ref":"lema",
+    "description": "modificacion"
+}

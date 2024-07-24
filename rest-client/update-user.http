@@ -1,0 +1,38 @@
+### Modificar con todos los datos
+PUT http://localhost/api-qr-tandem/v1/update-user.php
+Content-Type: "application/json"
+
+{
+   "nombre": "Pepito Grillo",
+    "delegacion": "Mallorca",
+    "email":"gerente@gmail.com"
+}
+
+### Modificar si falta algun campo
+PUT http://localhost/api-qr-tandem/v1/update-user.php
+Content-Type: "application/json"
+
+{
+   
+    "email": "empleado@gmail.com",
+    "delegacion":"employee"
+}
+
+### Modificar con los campo en blanco
+PUT http://localhost/api-qr-tandem/v1/update-user.php
+Content-Type: "application/json"
+
+{
+   "nombre": "",
+    "delegacion": "",
+    "email":""
+}
+### El email correcto pero el resto en blanco
+PUT http://localhost/api-qr-tandem/v1/update-user.php
+Content-Type: "application/json"
+
+{
+   "nombre": "",
+    "delegacion": "",
+    "email":"gerente@gmail.com"
+}

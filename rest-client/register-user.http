@@ -1,0 +1,62 @@
+### TC001 Caso de prueba: Todos los datos correctos
+POST http://localhost/api-qr-tandem/v1/register-user.php
+Content-Type: "application/json"
+
+{
+    "nombre": "Roberto Brasero",
+    "delegacion":"Ciudad Real",
+    "email": "robertob@gmail.com",
+    "password": "asdf"
+}
+
+### TC002-1 Falta algún dato, en este delegación
+POST http://localhost/api-qr-tandem/v1/register-user.php
+Content-Type: "application/json"
+
+{
+    "nombre": "Empleado2 Patrimonio",
+    "email": "empleado2@gmail.com",
+    "password": "asdf"
+}
+### TC002  Faltan datos Todos los campos vacios
+POST http://localhost/api-qr-tandem/v1/register-user.php
+Content-Type: "application/json"
+
+{
+    "nombre": "pepito de los amores",
+    "delegacion":"",
+    "email": "",
+    "password": ""
+}
+### TC003 prueba con usuario ya registrado
+POST http://localhost/api-qr-tandem/v1/register-user.php
+Content-Type: "application/json"
+
+{
+    "nombre": "Gerente Patrimonio",
+    "delegacion":"El Escorial",
+    "email": "gerente@gmail.com",
+    "password": "asdf"
+}
+### TC004 mandar mensaje con email inválido
+POST http://localhost/api-qr-tandem/v1/register-user.php
+Content-Type: "application/json"
+
+{
+    "nombre": "Lucia Martinez",
+    "delegacion": "Centro",
+    "email": "lucia.martinez@invalid",
+    "password": "12345678"
+
+}
+### TC005 mandar mensaje con datos innecesarios
+POST http://localhost/api-qr-tandem/v1/register-user.php
+Content-Type: "application/json"
+
+{
+    "nombre": "Carlos López",
+    "delegacion": "Madrid",
+    "email": "carlos.martinez@example.com",
+    "password": "12345678",
+    "cargo": "cuidador de caballos"
+}

@@ -1,0 +1,34 @@
+### TODOS LOS DATOS VALIDOS
+POST http://localhost/api-qr-tandem/v1/create-qr.php
+Content-Type: "application/json"
+
+{
+    "data": "bienvenido a holanda",
+    "nombre_ref": "prueba2 ",
+    "description": "prueba",
+    "created_by": 2
+}
+
+### TODOS LOS DATOS VALIDOS
+POST http://localhost/api-qr-tandem/v1/create-qr.php
+Content-Type: "application/json"
+
+{
+    "data": "",
+    "nombre_ref": "",
+    "description": "",
+    "created_by": 1
+}
+
+### Intentamos repetir un registro
+POST http://localhost/api-qr-tandem/v1/create-qr.php
+Content-Type: "application/json"
+
+{
+    "data": "carameloS",
+    "nombre_ref": "lolo2",
+    "description": "nulo",
+    "created_by": 1
+}
+
+
